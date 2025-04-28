@@ -1,0 +1,28 @@
+---
+---
+<button
+  id="scrollTopBtn"
+  aria-label="Volver al inicio"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="hidden fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white p-3 w-12 h-12 md:w-14 md:h-14 rounded-full shadow-2xl hover:bg-indigo-700 hover:rotate-12 transition-all duration-300 opacity-0 z-50"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M3.293 14.707a1 1 0 011.414 0L10 9.414l5.293 5.293a1 1 0 001.414-1.414l-6-6a1 1 0 00-1.414 0l-6 6a1 1 0 001.414 1.414z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const button = document.getElementById('scrollTopBtn');
+    if (button) {
+      if (window.scrollY > 300) {
+        button.classList.remove('hidden');
+        button.classList.add('opacity-100', 'animate-bounce');
+        button.classList.remove('opacity-0');
+      } else {
+        button.classList.add('opacity-0');
+        button.classList.remove('opacity-100', 'animate-bounce');
+      }
+    }
+  });
+</script>
