@@ -1,89 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/inicio.astro";
+import Beneficios from "../components/Beneficios.astro";
+import ComoFunciona from "../components/ComoFunciona.astro";
+import Testimonios from "../components/Testimonios.astro";
+import CtaFinal from "../components/demo.astro";
+import Footer from "../components/Footer.astro"; // Si luego quieres incluir un footer también
 ---
 
 <Layout>
-  <!-- Hero -->
-  <section
-    class="py-20 px-6 text-center bg-gradient-to-b from-indigo-600 to-indigo-500 text-white"
-  >
-    <h1 class="text-4xl font-bold mb-4">
-      Optimiza la generación de horarios para tus docentes
-    </h1>
-    <p class="text-lg mb-8 max-w-2xl mx-auto">
-      Schedule Swift Gen es una herramienta inteligente que automatiza la
-      creación de horarios, ahorrando tiempo y recursos.
-    </p>
-    <a
-      href="#features"
-      class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
-      >Ver características</a
-    >
-  </section>
-
-  <!-- Características -->
-  <section id="features" class="py-20 px-6 bg-gray-50 text-center">
-    <h2 class="text-3xl font-bold mb-12">Características principales</h2>
-    <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Generación automática</h3>
-        <p>
-          Genera horarios con solo unos clics utilizando algoritmos avanzados.
-        </p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Adaptable a tu institución</h3>
-        <p>Se ajusta a las necesidades de colegios o universidades.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Ahorro de tiempo</h3>
-        <p>
-          Reduce significativamente el tiempo dedicado a organizar horarios
-          manualmente.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cómo funciona -->
-  <section id="how-it-works" class="py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12">¿Cómo funciona?</h2>
-    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto text-left">
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">1. Define parámetros</h3>
-        <p>
-          Selecciona docentes, cursos, horarios disponibles y restricciones.
-        </p>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">2. Genera el horario</h3>
-        <p>
-          El sistema utiliza algoritmos inteligentes para crear la mejor
-          combinación posible.
-        </p>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">3. Exporta y utiliza</h3>
-        <p>
-          Exporta los horarios en formatos compatibles para impresión o sistemas
-          existentes.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Final -->
-  <section class="py-20 px-6 bg-indigo-600 text-white text-center">
-    <h2 class="text-3xl font-bold mb-4">¿Listo para empezar?</h2>
-    <p class="text-lg mb-6">
-      Prueba Schedule Swift Gen y transforma la manera en que gestionas los
-      horarios de tu institución.
-    </p>
-    <a
-      href="#"
-      class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
-      >Solicita una demo</a
-    >
-  </section>
+  <Hero />
+  <Beneficios />
+  <ComoFunciona />
+  <Testimonios />
+  <CtaFinal />
 </Layout>
-<!-- Footer -->
+
+
