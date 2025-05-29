@@ -1,29 +1,15 @@
-
-<section id="demo" class="py-20 px-6 bg-blue-600 text-white">
+<section id="demo" class="py-20 px-6 bg-[#0960AD] text-white">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     <div class="flex-1">
       <h2 class="text-3xl font-bold mb-6">
-        Comunícate con nosotros para adquirir y probar nuestro sistema
+        Optimiza tus horarios académicos hoy mismo
       </h2>
       <p class="text-lg mb-6 text-blue-100">
-        Más de 100 instituciones educativas ya usan nuestra plataforma para
-        optimizar sus horarios académicos. ¡Únete tú también!
+        Optimiza el proceso de generación de horarios en tu institución
+        educativa con nuestra plataforma diseñada para facilitar la
+        planificación académica de forma rápida y eficiente.
       </p>
       <ul class="space-y-4 mb-8">
-        <li class="flex items-start gap-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-green-400 flex-shrink-0"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clip-rule="evenodd"></path>
-          </svg>
-          <span>Prueba gratuita por 30 días sin compromisos</span>
-        </li>
         <li class="flex items-start gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +45,7 @@
         <div class="mx-auto mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10 text-blue-500 mx-auto"
+            class="h-10 w-10 text-[#0960AD] mx-auto"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -73,13 +59,14 @@
         </h3>
       </div>
       <form id="demoForm" class="space-y-4">
+        <!-- Inputs agrupados y estilizados -->
         <div class="flex gap-4">
           <input
             id="nombre"
             name="nombre"
             type="text"
             placeholder="Nombre"
-            class="w-full px-4 py-2 border rounded-md text-gray-900 placeholder-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 bg-white focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition"
             required
           />
           <input
@@ -87,33 +74,36 @@
             name="apellido"
             type="text"
             placeholder="Apellido"
-            class="w-full px-4 py-2 border rounded-md text-gray-900 placeholder-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 bg-white focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition"
             required
           />
         </div>
 
+        <!-- Email -->
         <input
           id="email"
           name="email"
           type="email"
           placeholder="Email institucional"
-          class="w-full px-4 py-2 border rounded-md text-gray-900 placeholder-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+          class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 bg-white focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition"
           required
         />
 
+        <!-- Institución -->
         <input
           id="institucion"
           name="institucion"
           type="text"
           placeholder="Institución"
-          class="w-full px-4 py-2 border rounded-md text-gray-900 placeholder-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+          class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 bg-white focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition"
           required
         />
 
+        <!-- Select -->
         <select
           id="cargo"
           name="cargo"
-          class="w-full px-4 py-2 border rounded-md text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+          class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 bg-white focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition"
           required
         >
           <option disabled selected value="">Selecciona tu cargo</option>
@@ -123,9 +113,10 @@
           <option>Otro</option>
         </select>
 
+        <!-- Botón -->
         <button
           type="submit"
-          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition"
+          class="w-full cursor-pointer bg-[#0960AD] hover:bg-[#074c8a] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-200 ease-in-out"
         >
           Enviar solicitud
         </button>
@@ -139,23 +130,32 @@
   </div>
 </section>
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"
+></script>
 
-<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" is:inline></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  is:inline></script>
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
     emailjs.init("0MMKLImKrZYISoB9J");
 
     // Configura Alertify para mostrar notificaciones en la parte superior derecha
-    alertify.set('notifier', 'position', 'top-right');
+    alertify.set("notifier", "position", "top-right");
 
     const form = document.getElementById("demoForm");
     if (!form) return;
@@ -164,10 +164,14 @@
       event.preventDefault();
 
       const email = form.email.value.trim().toLowerCase();
-      const enviados = JSON.parse(localStorage.getItem("correosEnviados") || "[]");
+      const enviados = JSON.parse(
+        localStorage.getItem("correosEnviados") || "[]"
+      );
 
       if (enviados.includes(email)) {
-        alertify.warning("Ya hemos recibido una solicitud con este correo institucional.");
+        alertify.warning(
+          "Ya hemos recibido una solicitud con este correo institucional."
+        );
         form.reset(); // limpiar si ya se ingresó antes
         return;
       }
@@ -184,12 +188,16 @@
           enviados.push(email);
           localStorage.setItem("correosEnviados", JSON.stringify(enviados));
 
-          alertify.success("Gracias por comunicarte. Revisa tu correo para más información.");
+          alertify.success(
+            "Gracias por comunicarte. Revisa tu correo para más información."
+          );
           form.reset(); // limpiar si se envió correctamente
         })
         .catch((error) => {
           console.error("Error al enviar el formulario:", error);
-          alertify.error("Ocurrió un error al enviar la solicitud. Intenta más tarde.");
+          alertify.error(
+            "Ocurrió un error al enviar la solicitud. Intenta más tarde."
+          );
         });
     });
   });
